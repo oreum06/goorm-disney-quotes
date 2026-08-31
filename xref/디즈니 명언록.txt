@@ -1,0 +1,22 @@
+| No | 작품      | 명대사 (영문)                                                                                | 한국어 의미                          | 핵심 키워드   |
+| -- | ------- | --------------------------------------------------------------------------------------- | ------------------------------- | -------- |
+| 1  | 라이온 킹   | *Remember who you are.*                                                                 | 네가 누구인지 기억해라.                   | 자아, 정체성  |
+| 2  | 라이온 킹   | *The past can hurt. But the way I see it, you can either run from it or learn from it.* | 과거는 아프지만 도망칠 수도 있고 배울 수도 있다.    | 성장, 극복   |
+| 3  | 라푼젤     | *Venture outside your comfort zone. The rewards are worth it.*                          | 안전지대를 벗어나라. 그만한 가치가 있다.         | 도전       |
+| 4  | 겨울왕국    | *Fear will be your enemy.*                                                              | 두려움이야말로 가장 큰 적이다.               | 용기       |
+| 5  | 겨울왕국 2  | *The next right thing.*                                                                 | 지금 해야 할 가장 옳은 한 가지를 하라.         | 한 걸음, 희망 |
+| 6  | 모아나     | *The call isn't out there at all. It's inside me.*                                      | 답은 저 멀리가 아니라 내 안에 있다.           | 자아 발견    |
+| 7  | 모아나     | *Sometimes our strengths lie beneath the surface.*                                      | 우리의 강점은 때로 보이지 않는 곳에 숨어 있다.     | 잠재력      |
+| 8  | 뮬란      | *The flower that blooms in adversity is the most rare and beautiful of all.*            | 역경 속에서 피어난 꽃이 가장 아름답다.          | 역경       |
+| 9  | 포카혼타스   | *Listen with your heart.*                                                               | 마음으로 들어라.                       | 공감       |
+| 10 | 신데렐라    | *Have courage and be kind.*                                                             | 용기를 가지고 친절하라.                   | 친절, 용기   |
+| 11 | 피터팬     | *All it takes is faith and trust.*                                                      | 필요한 것은 믿음과 신뢰뿐이다.               | 믿음       |
+| 12 | 곰돌이 푸   | *You're braver than you believe, stronger than you seem, and smarter than you think.*   | 넌 스스로 생각하는 것보다 더 용감하고 강하며 똑똑하다. | 자신감      |
+| 13 | 곰돌이 푸   | *Sometimes the smallest things take up the most room in your heart.*                    | 가장 작은 것이 가장 큰 자리를 차지하기도 한다.     | 사랑       |
+| 14 | 월-E     | *I don't want to survive. I want to live.*                                              | 난 단지 살아남고 싶은 것이 아니라 살아가고 싶다.    | 삶        |
+| 15 | 업(Up)   | *Adventure is out there!*                                                               | 모험은 바로 저 밖에 있다!                 | 도전       |
+| 16 | 토이 스토리  | *To infinity and beyond!*                                                               | 무한을 넘어 저 너머로!                   | 꿈, 도전    |
+| 17 | 니모를 찾아서 | *Just keep swimming.*                                                                   | 계속 앞으로 나아가.                     | 끈기       |
+| 18 | 코코      | *Our memories have to be passed down by those who knew us in life.*                     | 기억은 우리를 기억하는 사람들에 의해 이어진다.      | 가족, 추억   |
+| 19 | 소울      | *Life is full of possibilities. You just need to know where to look.*                   | 삶은 가능성으로 가득하다. 어디를 볼지만 알면 된다.   | 희망       |
+| 20 | 인사이드 아웃 | *Crying helps me slow down and obsess over the weight of life's problems.*              | 눈물은 삶의 무게를 받아들이게 도와준다.          | 감정, 치유   |

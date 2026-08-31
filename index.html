@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>황혼의 명언 | Twilight Quotes</title>
+  <meta name="description" content="디즈니 명대사를 감성적인 글래스모피즘 카드로 감상하는 앱" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    as="style"
+    crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- 카드를 PNG 이미지로 저장하기 위한 라이브러리 (DOM -> canvas) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <!-- 스플래시: 처음 잠깐 보여주고 자동으로 사라진다 -->
+  <div class="splash" id="splash">
+    <div class="splash-logo">Twilight Quotes</div>
+    <div class="splash-sub">오늘의 명언을 준비하고 있어요…</div>
+  </div>
+
+  <!-- 배경: 명언이 바뀔 때마다 Unsplash(또는 대체 이미지)가 부드럽게 교차 전환된다 -->
+  <div class="bg-photo-stage" aria-hidden="true">
+    <img id="bg-photo-a" class="bg-photo" alt="" />
+    <img id="bg-photo-b" class="bg-photo" alt="" />
+    <div class="bg-scrim"></div>
+  </div>
+
+  <div class="app">
+    <header class="app-header">
+      <h1 class="app-title">Twilight Quotes</h1>
+      <p class="app-subtitle">✦ 황혼의 명언 ✦</p>
+    </header>
+
+    <main class="app-main">
+      <!-- 홈: 카테고리 필터 + 오늘의 명언 카드 -->
+      <section id="view-home" class="view view-home" data-view="home">
+        <div class="chips" id="category-chips"></div>
+
+        <div class="card-stage">
+          <button class="nav-arrow nav-arrow-prev" id="btn-prev" aria-label="이전 명언"></button>
+          <div class="card-frame" id="card-frame">
+            <div id="card-mount" class="card-mount"></div>
+          </div>
+          <button class="nav-arrow nav-arrow-next" id="btn-next" aria-label="다음 명언"></button>
+        </div>
+
+        <div class="progress-dots" id="progress-dots"></div>
+
+        <div class="action-bar">
+          <button type="button" class="action-btn" id="btn-like" aria-label="좋아요" aria-pressed="false"></button>
+          <button type="button" class="action-btn" id="btn-copy" aria-label="텍스트 복사"></button>
+          <button type="button" class="action-btn" id="btn-download" aria-label="이미지로 저장"></button>
+        </div>
+      </section>
+
+      <!-- 내 보관함: 좋아요한 명언 그리드 (인스타그램 프로필 그리드 느낌) -->
+      <section id="view-collection" class="view view-collection" data-view="collection" hidden>
+        <h2 class="view-title">내 보관함 <span class="count" id="collection-count"></span></h2>
+        <div class="collection-grid" id="collection-mount"></div>
+        <p class="empty-state" id="collection-empty" hidden>
+          <span class="emoji">♡</span>
+          아직 저장한 명언이 없어요.<br />마음에 드는 카드에 하트를 눌러보세요.
+        </p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="화면 전환">
+      <button class="nav-btn is-active" data-target="home" data-icon="home"><span>홈</span></button>
+      <button class="nav-btn" data-target="collection" data-icon="bookmark"><span>내 보관함</span></button>
+    </nav>
+  </div>
+
+  <!-- "이미지로 저장하기" 전용 오프스크린 템플릿. 화면엔 보이지 않지만 html2canvas가 이 DOM을 캡처해서 PNG로 만든다. -->
+  <div class="export-template" id="export-template" aria-hidden="true">
+    <img id="export-bg" class="export-bg" alt="" />
+    <div class="export-overlay"></div>
+    <p class="export-quote" id="export-quote"></p>
+    <p class="export-translation" id="export-translation"></p>
+    <p class="export-source" id="export-source"></p>
+    <p class="export-brand">✦ Twilight Quotes ✦</p>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
