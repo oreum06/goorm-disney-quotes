@@ -1,0 +1,132 @@
+.theme-dark {
+  --text-on-photo: #ffffff;
+  --text-on-photo-soft: rgba(255, 255, 255, 0.82);
+  --text-on-photo-faint: rgba(255, 255, 255, 0.6);
+  --glass-bg: rgba(255, 255, 255, 0.14);
+  --glass-bg-strong: rgba(255, 255, 255, 0.22);
+  --glass-border: rgba(255, 255, 255, 0.32);
+}
+
+.theme-light {
+  --text-on-photo: #22172f;
+  --text-on-photo-soft: rgba(34, 23, 47, 0.78);
+  --text-on-photo-faint: rgba(34, 23, 47, 0.58);
+  --glass-bg: rgba(255, 255, 255, 0.68);
+  --glass-bg-strong: rgba(255, 255, 255, 0.86);
+  --glass-border: rgba(255, 255, 255, 0.68);
+  --shadow-soft: 0 20px 60px rgba(81, 52, 112, 0.22);
+}
+
+.theme-light .bg-photo {
+  filter: brightness(1.08) saturate(0.92);
+}
+
+.theme-light .bg-scrim {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 244, 0.7) 0%, rgba(255, 250, 244, 0.38) 42%, rgba(255, 244, 238, 0.82) 100%);
+}
+
+.theme-light .bottom-nav,
+.theme-light .toast {
+  background: rgba(255, 255, 255, 0.72);
+  color: #24182f;
+}
+
+.theme-light .nav-btn.is-active,
+.theme-light .chip.is-active {
+  color: #fff;
+}
+
+.theme-light .quote-card {
+  box-shadow: var(--shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.theme-light .quote-card-quote {
+  text-shadow: none;
+}
+
+.theme-light .quote-card-translation {
+  border-top-color: rgba(34, 23, 47, 0.18);
+}
+
+.app-header {
+  position: relative;
+}
+
+.top-controls {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+
+.header-icon-btn {
+  min-width: 42px;
+  height: 42px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: var(--glass-bg);
+  color: var(--text-on-photo);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 10px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 150ms ease, transform 100ms ease;
+}
+
+.header-icon-btn:hover {
+  background: var(--glass-bg-strong);
+}
+
+.header-icon-btn:active {
+  transform: scale(0.94);
+}
+
+.header-icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.header-icon-btn span {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.app-title-button {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.app-title-button:active {
+  transform: translateY(1px);
+}
+
+.empty-state {
+  white-space: normal;
+}
+
+@media (max-width: 380px) {
+  .app-header {
+    padding-top: 68px;
+  }
+
+  .top-controls {
+    top: 16px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
